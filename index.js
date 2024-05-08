@@ -1,5 +1,5 @@
 module.exports.firsthandler = async (event) => {
-  console.log('delfrinando')
+  console.log('soon')
   console.log(event)
   return {
     statusCode: 200,
