@@ -13,7 +13,7 @@ jobs:
           npm install
       - run: echo "🍏 This job's status is ${{ job.status }}."
   
-      unit-testing:
+  unit-testing:
     runs-on: ubuntu-latest
     needs: install-dependencies
     steps:
