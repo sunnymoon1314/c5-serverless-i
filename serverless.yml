@@ -12,7 +12,7 @@ functions:
     handler: index.firsthandler
     events:
       - httpApi:
-          path: /delfrinando
+          path: /get666
           method: get
       # - sqs:
       #    arn: arn:aws:sqs:us-east-1:255945442255:delfrinando-pranata
@@ -21,20 +21,8 @@ functions:
     handler: index.secondhandler
     events:
       - httpApi:
-          path: /pranata
+          path: /post888
           method: post
-      - sqs:
-          arn:
-            Fn::GetAtt:
-              - PranataQueue
-              - Arn
-	
-resources:
-  Resources:
-    PranataQueue:
-      Type: "AWS::SQS::Queue"
-      Properties:
-        QueueName: "pranata-queue"
 
 plugins:
   - serverless-offline
