@@ -1,5 +1,5 @@
 # "test": "echo \"Error: no test specified\" && exit 1"
-name: GitHub Actions Demo
+name: Unit Testing And Deployment Of Serverless Node.js Application.
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
